@@ -1,0 +1,1 @@
+Idea for the Social Media project is to make it a Facebook/Twitter-like app with almost the same features but different color aesthetic. The codes and the design will based on my previous project from Tomorrow's Web that involves using different APIs but adding in or using other functions.

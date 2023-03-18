@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {margin: 0;}
+
+ul.topnav {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: rgb(29, 13, 13);
+}
+
+ul.topnav1 {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: rgb(255, 255, 255);
+}
+
+ul.topnav li {float: left;}
+ul.topnav li a {
+ display: block;
+ color: rgb(255, 255, 255);
+ text-align: center;
+
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+ul.topnav1 li p {
+ display: block;
+ color: rgb(29, 13, 13);
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+ul.topnav li a.active {background-color: rgb(46, 134, 193);}
+ul.topnav li.right {float: right;}
+@media screen and (max-width: 600px) {
+ ul.topnav li.right,
+ ul.topnav li {float: none;}
+}
+
+.center{
+ margin: 0;
+ position: absolute;
+ top: 8%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+* {
+box-sizing: border-box;
+}
+
+.column {
+ float: left;
+ padding: 10px;
+ height: 470px;
+}
+
+.devleft {
+ width: 25%;
+}
+
+.devright {
+ width: 75%;
+}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+table {
+border-collapse: collapse;
+ font-family: Tahoma, Geneva, sans-serif;
+}
+
+table td {
+padding: 15px;
+}
+
+table thead td {
+background-color: rgb(255, 127, 80);
+color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 13px;
+border: 1px solid rgb(0, 0, 0);
+}
+
+table tbody td {
+color: rgb(99, 99, 99);
+border: 1px solid rgb(221, 223, 225);
+}
+
+table tbody tr {
+background-color: rgb(249, 250, 251);
+ font-size: 11px;
+}
+
+table tbody tr:nth-child(odd) {
+background-color: rgb(255, 255, 255);
+}
+
+#dragger_wrapper {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#dragger {
+    width: 600px;
+    height: 300px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed rgb(251, 251, 251);
+    border-radius: 5px;
+    background-color: rgb(128,128,128);
+}
+
+#dragger.active {
+    border: 2px dashed rgb(0, 0, 0);
+}
+
+#dragger img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#filename {
+    width: 100%;
+}
+
+.fileName {
+    padding: 5px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-trash-can {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.icon {
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+#draganddrop{
+    margin: 5px 0;
+    color:rgb(255, 255, 255);
+}
+
+#Or{
+    margin: 5px 0;
+    color:rgb(255, 255, 255);
+}
+
+#filename{
+    width: 100%;
+    margin: 10px
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+ <ul class="topnav">
+ <li><a class="active" href="#Home">Home</a></li>
+ <li class="right"><a href="Profile.html">Profile</a></li>
+ </ul>
+ </header>
+ <div class="row">
+    <div class="column devright">
+        <div class="container border mt-3 bg-light">
+            <div class="row">
+                <div class="col-md-6 py-3">
+                    <h2>Social Media</h2>
+                    <div class="form-group">
+                        <form>
+                        <h3>Post:</h3>
+                        <textarea
+                        type="text"  
+                        id="postid" 
+                        name="post"
+                        rows="3" 
+                        class="form-control"
+                        placeholder="..."></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div><br>
+            
+            <button id="postbutton">Post</button>
+            </br>
+                <div class="column">
+                    <h3>Recent Posts:</h3>
+                    <ul id="recentposts">
+        
+                    </ul>
+                    <script src="code.js"></script>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
