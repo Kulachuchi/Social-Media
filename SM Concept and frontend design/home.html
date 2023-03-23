@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body bgcolor="plum">
  <header>
  <ul class="topnav">
  <li><a class="active" href="#Home">Home</a></li>
@@ -21,28 +21,24 @@
                 <div class="col-md-6 py-3">
                     <h2>Social Media</h2>
                     <div class="form-group">
-                        <form>
-                        <h3>Post:</h3>
-                        <textarea
-                        type="text"  
-                        id="postid" 
-                        name="post"
-                        rows="3" 
-                        class="form-control"
-                        placeholder="..."></textarea>
-                        </form>
+                        <textarea type="text" id="postid" name="post" rows="3" placeholder="..."></textarea>
+                        <div class="add-post">
+                            <a href="#">Photo/Video</a>
+                        </div>
                     </div>
                 </div>
-            </div><br>
+            </div>
+        </div><br>
             
             <button id="postbutton">Post</button>
             </br>
                 <div class="column">
                     <h3>Recent Posts:</h3>
                     <ul id="recentposts">
-        
                     </ul>
+                    <div class="post-container">
                     <script src="code.js"></script>
+                    </div>
                 </div>
         </div>
     </div>

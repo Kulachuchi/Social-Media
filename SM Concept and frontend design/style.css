@@ -191,3 +191,27 @@ button {
     outline: none;
     cursor: pointer;
 }
+
+.add-post{
+    display: flex;
+    margin-top: 1-px;
+}
+
+.add-post a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:rgb(99, 99, 99);
+    margin-right: 30px;
+    font-size: 13px;
+
+}
+
+.post-container{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 20px;
+    color:rgb(99, 99, 99);
+    margin: 20px 0;
+}
