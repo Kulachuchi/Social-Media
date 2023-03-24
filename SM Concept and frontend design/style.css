@@ -195,6 +195,7 @@ button {
 .add-post{
     display: flex;
     margin-top: 1-px;
+    background:rgb(249, 250, 251)
 }
 
 .add-post a{
