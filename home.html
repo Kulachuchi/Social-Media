@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+ <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #eee;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #0062cc;
+    }
+    .post {
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .post h2 {
+        margin-top: 0;
+      }
+      .post p {
+        margin-bottom: 0;
+      }
+  </style>
+<body bgcolor="plum">
+ <header>
+ <ul class="topnav">
+ <li><a class="active" href="#Home">Home</a></li>
+ <li class="right"><a href="login.html">Logout</a></li>
+ <li class="right"><a href="Profile.html">Profile</a></li>
+ </ul>
+ </header>
+ <h1>Create a New Post</h1>
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Link Post to Social Media</title>
+</head>
+<body>
+	<form id="myForm">
+    <label for="message">Content:</label>
+    <textarea id="message" name="message" rows="10" cols="50"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+	<script>
+    const form = document.getElementById("myForm");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  
+  const message = document.getElementById("message").value;
+
+  
+  const results = document.createElement("div");
+  results.innerHTML = `
+    <p>Message: ${message}</p>
+  `;
+  form.appendChild(results);
+
+  
+  form.reset();
+});
+  </script>
+</body>
+</html>
