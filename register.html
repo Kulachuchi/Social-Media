@@ -56,14 +56,13 @@
 <body>
 <h1>Registration</h1>
 <form>
-    <label for="reg-username">Username:</label>
-    <input type="text" id="reg-username" name="reg-username"><br><br>
-    <label for="reg-password">Password:</label>
-    <input type="password" id="reg-password" name="reg-password"><br><br>
-    <label for="confirm-password">Confirm Password:</label>
-    <input type="password" id="confirm-password" name="confirm-password"><br><br>
-    <input type="submit" value="Register" onclick="validateRegistration(event)">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="button" value="Submit" onclick="register()">
 </form>
-<script src="register.js"></script>
+<p>Already have an account? <a href="login.html">Login Here</a></p>
+<script src="reglog.js"></script>
 </body>
 </html>

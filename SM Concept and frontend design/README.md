@@ -1,4 +1,4 @@
-Idea for the Social Media project is to make it a Facebook/Twitter-like app with almost the same features but different color aesthetic.
+Idea for the Social Media project is to make it a Game Forum-like-app with almost the same features but different color aesthetic.
 The codes and the design will based on my previous project from Tomorrow's Web that involves using different APIs but adding in or using 
 other functions.
 
@@ -10,4 +10,6 @@ and the others' posts to view.
 find posts easier
 4. Profile page which has your username, profile pictures and banners/cover photo, some little information about you, customized statuses,
 and shows the posts that you have posted on the platform.
-5. Recommended pages or friend or follow suggestions.
+
+Some problems that needs to be addressed:
+1. MongoDB not linking properly or unable to link

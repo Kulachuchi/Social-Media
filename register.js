@@ -1,13 +1,3 @@
-const express = require('express');
-    const { MongoClient } = require('mongodb');
-    const uri = "mongodb+srv://CCO6005-01:black.D0g@cluster0.lpfnqqx.mongodb.net/blog?retryWrites=true&w=majority";
-    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
-    client.connect((err) => {
-        if (err) throw err;
-
-        const database = client.db("blog")
-    });
 
     function validateRegistration(event) {
         event.preventDefault(); // Prevent form submission
@@ -42,14 +32,7 @@ const express = require('express');
         // If all fields are valid, submit the form
         if (document.forms[0].submit() !== onclick) {
             alert("Register Successful");
-            window.location.href="http://127.0.0.1:5500/SM%20Concept%20and%20frontend%20design/login.html";
-            const credentialsCollection = database.collection("francis-post");
-            const credentials = { username: 'user1', password: 'password123'};
-            credentialsCollection.insertOne(credentials, (err, result) => {
-            if (err) throw err;
-            console.log('${result.insertedCount} credentials saved');
-            client.close();
-        })
+            window.location.href="http://127.0.0.1:5500/login.html";
         }
 
         

@@ -6,25 +6,16 @@ const {Schema, model} = mongoose;
 const postSchema=new Schema({
     postedBy: String,
     message: String,
-    likes: Number,
     time: Date,
     tags: [String],
-    comments: [
-        {
-            commentBy: String,
-            comment: String,
-            time: Date
-        }
-    ]
 })
 
-const Post = model("Francis's Posts", postSchema);
+const Post = model("francis-post", postSchema);
 
 function addNewPost(userID, post){
     let myPost={
         postedBy: userID,
         message: post.message,
-        likes: 0,
         time: Date.now()
     }
     //posts.unshift(myPost)
